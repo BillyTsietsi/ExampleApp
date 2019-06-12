@@ -4,17 +4,14 @@
     Welcome to {{ title }}!
   </h1>
   
-
   
-  <button id="btn" (click)= "addList()" > Add </button>
-
 <ul>
-  <li   *ngFor= "let display of list"> {{ list }} <button (click)= "delete(display)">X</button></li>
+  <li id="btn" (click)= "removeNew(list)" *ngFor= "let list of animal"> {{ list }} <button>X</button></li>
    <br>
   <!--img width="300" alt="Angular Logo" src=".img/10.jpg"--> <br>
 </ul>
-  <!-->button id="btn" (click)= "addNew()" > Add </button-->
-  <input [(ngModel)] ="newList"> <br>
+  <button id="btn" (click)= "addNew()" > Add </button>
+
 </div>
 
 

@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+  
+
+  <button id="btn" (click)= "removeNew(list)" *ngFor= "let list of animal"> {{ list }} </button>
+   <br>
+  <!--img width="300" alt="Angular Logo" src=".img/10.jpg"--> <br>
+
+  <input [(ngModel)] ="newAnimal"> <br>
+  <button id="btn" (click)= "addNew()" > Add </button>
+
+</div>
+
+
+<router-outlet></router-outlet>
+
